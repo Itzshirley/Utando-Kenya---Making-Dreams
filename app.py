@@ -30,7 +30,7 @@ def home():
     <body>
       <header>
   <img src="{{ url_for('static', filename='logo.jpg') }}" alt="CDI Logo" style="height:120px; float:left; margin-right:15px;">
-  <h1>Connecting Dreams Initiative</h1>
+  <h1>Utando Kenya - Making Dreams Initiative</h1>
   <p>Every Dream Can Thrive</p>
 </header>
 

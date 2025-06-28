@@ -29,7 +29,7 @@ def home():
     </head>
     <body>
       <header>
-  <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="CDI Logo" style="height:120px; float:left; margin-right:15px;">
+  <img src="{{ url_for('static', filename='logo.jpg') }}" alt="CDI Logo" style="height:120px; float:left; margin-right:15px;">
   <h1>Utando Kenya - Making Dreams Initiative</h1>
   <p>Every Dream Can Thrive</p>
 </header>
@@ -46,7 +46,7 @@ def home():
            mentorship, and technology-driven learning by leveraging research and feasible evidence based intervention. Join us as we transform rural education and build
            brighter futures together.<br>
            <div style="text-align:center;">
-  <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Tree planting" style="width: 45%;">
+  <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Tree planting" style="width: 45%;">
 </div>
 
            </p>
@@ -81,7 +81,7 @@ def about():
     </head>
     <body>
       <header>
-  <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="CDI Logo" style="height:100px; float:left; margin-right:15px;">
+  <img src="{{ url_for('static', filename='logo.jpg') }}" alt="CDI Logo" style="height:100px; float:left; margin-right:15px;">
   <h1>About Utando Kenya - Making Dreams Initiative</h1>
 </header>
 
@@ -183,7 +183,7 @@ def projects():
     </head>
     <body>
       <header>
-        <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="CDI Logo" class="logo">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="CDI Logo" class="logo">
         <h1>Our Projects</h1>
       </header>
 
@@ -286,7 +286,7 @@ def contact():
     </head>
     <body>
       <header>
-  <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="CDI Logo" style="height:100px; float:left; margin-right:15px;">
+  <img src="{{ url_for('static', filename='logo.jpg') }}" alt="CDI Logo" style="height:100px; float:left; margin-right:15px;">
   <h1>Contact Us</h1>
 </header>
       <nav>

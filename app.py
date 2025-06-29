@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """app.py"""
-from flask import Flask, render_template_string, request, url_for
+from flask import Flask, render_template_string, request, url_for, Response
 
 app = Flask(__name__)
 

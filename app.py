@@ -5,7 +5,7 @@ from flask import Flask, render_template_string, request, url_for
 app = Flask(__name__)
 
 # Home page
-@app.route("")
+@app.route("/")
 def home():
     html = """
     <!DOCTYPE html>

@@ -307,9 +307,43 @@ def contact():
     </html>
     """
     return render_template_string(html)
+from flask import Response
+
 @app.route("/sitemap.xml")
 def sitemap():
-    return app.send_static_file("sitemap.xml")
+    sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{url_for('home', _external=True)}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{url_for('about', _external=True)}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{url_for('projects', _external=True)}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{url_for('contact', _external=True)}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>"""
+    return Response(sitemap_xml, mimetype='application/xml')
+@app.route("/robots.txt")
+def robots():
+    robots_txt = """User-agent: *
+Disallow:
+
+Sitemap: https://utando-kenya-making-dreams-5.onrender.com/sitemap.xml
+"""
+    return Response(robots_txt, mimetype="text/plain")
+
 if __name__ == "__main__":
     app.run(debug=True)
 

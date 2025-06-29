@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://yourproject.onrender.com/sitemap.xml
+Sitemap: https://utando-kenya-making-dreams-5.onrender.com/sitemap.xml

@@ -5,7 +5,7 @@ from flask import Flask, render_template_string, request, url_for
 app = Flask(__name__)
 
 # Home page
-@app.route("/")
+@app.route("")
 def home():
     html = """
     <!DOCTYPE html>
@@ -307,6 +307,9 @@ def contact():
     </html>
     """
     return render_template_string(html)
+@app.route("/sitemap.xml")
+def sitemap():
+    return app.send_static_file("sitemap.xml")
 if __name__ == "__main__":
     app.run(debug=True)
 
